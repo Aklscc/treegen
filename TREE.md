@@ -1,0 +1,19 @@
+treegen/
+    docs/
+        incidents.md
+    scripts/
+        check-tree.sh
+    tests/
+        test_core.py
+    treegen/
+        __init__.py
+        cli.py
+        core.py
+    .gitignore
+    AGENTS.md
+    CHANGELOG.md
+    pyproject.toml
+    README.md
+    TREE.md
+    treegen.cmd
+    treegen.sh
