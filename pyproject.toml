@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "treegen"
-version = "0.4.0"
+version = "0.6.2"
 description = "扫描目录，生成带忽略规则的 Markdown 目录树"
 requires-python = ">=3.11"
 

@@ -1,4 +1,6 @@
 treegen/
+    .githooks/
+        pre-commit
     docs/
         incidents.md
     scripts/

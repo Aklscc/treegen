@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+# pre-commit —— 本地守卫，只检查不修改。
+#
+# 为什么用 --check 而不是默认的修复模式？
+#   pre-commit 时改文件 = 改你正在提交的内容。
+#   「修了但不 add」比不修更糟——提交里留着旧版本，工作区是新版本，
+#   于是仓库错、工作区对，而且你察觉不到。
+#   所以这里只检查，把决策留给人。
+#
+# 注意：core.hooksPath 是**本地 git 配置**，不随仓库走。
+#   新克隆的人要自己跑一次：
+#       git config core.hooksPath .githooks
+#   不跑就没有 hook —— 这就是「本地 Hook 可绕过」的具体形态。
+#   真正兜底的是 CI（见 AGENTS.md · 输出约定）。
+
+bash scripts/check-tree.sh --check
